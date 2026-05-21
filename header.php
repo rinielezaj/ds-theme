@@ -3,9 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>DS Theme</title>
+        <?php wp_head();?>
     </head>
 
-    <body>
+    <body> <?php body_class();?>
+
+    <?php wp_nav_menu(array('theme_location'=>'primary'));?>
         <header>
             <nav>
                 <ul>
