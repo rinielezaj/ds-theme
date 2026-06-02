@@ -58,4 +58,10 @@
 }
 
     add_action('widgets_init', 'themename_widgets_init');   
+
+    add_action("widgets_init", 'wpdocs_register_widgets');
+
+    function wpdocs_register_widgets(){
+        register_widget("My_Widget");
+    }
 ?>
